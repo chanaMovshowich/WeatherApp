@@ -59,7 +59,7 @@ The Weather Web Application is a responsive and accessible web app built with Re
     ```bash
     npm start
     ```
-    The frontend application will be accessible at `http://localhost:3000`.
+    The frontend application will be accessible at `http://localhost:5173`.
 
 ## Contact
 For further information or inquiries, you can contact me at [chana6773439@gmail.com](mailto:chana6773439@gmail.com).
