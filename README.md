@@ -1,4 +1,3 @@
-מה אתם אומרות על הקובץ readme הזה Weather Web Application
 # Weather Web Application
 
 ## Overview
@@ -30,7 +29,7 @@ The Weather Web Application is a responsive and accessible web app built with Re
 ### Backend Setup
 1. Navigate to the backend directory:
     ```bash
-    cd Weather Site Backend
+    cd Weather_Site_Backend
     ```
 2. Install backend dependencies:
     ```bash
@@ -50,7 +49,7 @@ The Weather Web Application is a responsive and accessible web app built with Re
 ### Frontend Setup
 1. Navigate to the frontend directory:
     ```bash
-    cd ../Weather Site Client
+    cd ../Weather_Site_Client
     ```
 2. Install frontend dependencies:
     ```bash
@@ -60,7 +59,7 @@ The Weather Web Application is a responsive and accessible web app built with Re
     ```bash
     npm start
     ```
-    The frontend application will be accessible at `http://localhost:3000`.
+    The frontend application will be accessible at `http://localhost:5173`.
 
 ## Contact
 For further information or inquiries, you can contact me at [chana6773439@gmail.com](mailto:chana6773439@gmail.com).
