@@ -50,7 +50,7 @@ export const getTheWeatherForecast = async (req, res, next) => {
             lon: location.lon,
             localtime: weatherData.forecast.forecastday[0].date,
             last_update: current.last_updated,
-            temp_c: current.temp_c,
+            temp_c: Math.ceil(current.temp_c),
             condition: current.condition.text,
             wind_kph: current.wind_kph,
             humidity: current.humidity,
@@ -107,7 +107,8 @@ const valodation = (req) => {
 //Retrieves the temperature for a specific hour from the weather data.
 const getDegreeForSpecificHour = (weatherHours, hour) => {
     weatherHours = weatherHours?.forecast?.forecastday[0].hour;
-    return weatherHours[hour]?.temp_c;
+    let temp=weatherHours[hour]?.temp_c;
+    return Math.ceil(temp)
 };
 
 

@@ -156,22 +156,6 @@ input[type="Button"] {
 
 @media (max-width: 1200px) {
 
-    /* .main {
-        flex-direction: column;
-        width: unset;
-          overflow-x: hidden;
-    
-    }
-
-
-    .presentation-text {
-        width: 80%;
-    }
-
-    #weatherDetails {
-        padding: 0px;
-        display: block;
-    } */
     .main {
         flex-direction: column;
         width: 100%;

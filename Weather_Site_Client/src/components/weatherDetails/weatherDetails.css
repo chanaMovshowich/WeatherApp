@@ -48,8 +48,18 @@ body {
     font-size: 24px;
     margin: 5px 0;
     text-align: start;
-    padding-left: 35%;
+    padding-left: 40%;
     padding-top: 8px;
+    top: 394px;
+    left: 937px;
+    width: 79px;
+    height: 44px;
+    text-align: left;
+    font: normal normal 300 30px/30px Heebo;
+    letter-spacing: 0px;
+    color: #E8F1F2;
+    opacity: 1;
+
 }
 
 .details {
