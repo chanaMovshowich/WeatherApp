@@ -11,7 +11,7 @@ The Weather Web Application is a responsive and accessible web app built with Re
 - **Accessibility:** Implements accessibility best practices, including ARIA roles and alternative text for images.
 
 ## Screenshots
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/c1e19450-1937-44ee-b5e4-821769a5b2ae)
 ## Installation and Setup
 
 ### Prerequisites
