@@ -13,7 +13,7 @@ const HomePage = () => {
     const [cityName, setCityName] = useState("");
     const [weatherDetails, setWeatherDetails] = useState(null);
     const [error, setError] = useState("");
-    const modifiedDateTimeString = weatherDetails?.last_update.replace(' ', ' at ');
+    const modifiedDateTimeString = weatherDetails.localtime.replaceAll('-', '/').replace(' ', ' at ');
 
     // Handles changes in the city name input field
     const handleChange = (event) => {

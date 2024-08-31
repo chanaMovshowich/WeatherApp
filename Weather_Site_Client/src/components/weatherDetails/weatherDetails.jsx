@@ -8,9 +8,16 @@ import './WeatherDetails.css';
  * 
  * Accessibility features are included, with ARIA roles and labels to support screen readers.
  */
-const WeatherDetails = ({ weatherDetails }) => {
-    const modifiedDateTimeString = weatherDetails.localtime.replace(' ', ' at ');
 
+//a function that return hour in format of full hour
+const WeatherDetails = ({ weatherDetails }) => {
+    const modifiedDateTimeString = weatherDetails.localtime.replaceAll('-', '/').replace(' ', ' at ');
+    const formatHour = (hour) => {
+        if (hour < 10) {
+            return "0" + hour + ":00"
+        }
+        return hour + ":00"
+    }
     return (
         <div className='container' role="region" aria-labelledby="weather-details-title">
             <div className="weather-card">
@@ -23,22 +30,22 @@ const WeatherDetails = ({ weatherDetails }) => {
 
                 {/* Temperature and condition */}
                 <div className="temperature" aria-labelledby="temperature-label">
-                    <h1 id="temperature-label">{weatherDetails.temp_c}°</h1>
+                    <h1 id="temperature-label">{Math.ceil(weatherDetails.temp_c)}°</h1>
                     <p>{weatherDetails.condition}</p>
                 </div>
 
                 {/* Additional weather details */}
                 <div className="details" role="group" aria-labelledby="details-label">
                     <div aria-labelledby="precipitation-label">
-                        <p id="precipitation-label">Precipitation</p>
+                        <p className='labels' id="precipitation-label">Precipitation</p>
                         <p><strong>{weatherDetails.precip_mm} mm</strong></p>
                     </div>
                     <div>
-                        <p id="humidity-label">Humidity</p>
+                        <p className='labels' id="humidity-label">Humidity</p>
                         <p><strong>{weatherDetails.humidity}%</strong></p>
                     </div>
                     <div>
-                        <p id="wind-label">Wind</p>
+                        <p className='labels' id="wind-label">Wind</p>
                         <p><strong>{weatherDetails.wind_kph} km/h</strong></p>
                     </div>
                 </div>
@@ -47,8 +54,8 @@ const WeatherDetails = ({ weatherDetails }) => {
                 <div className="hourly-temperatures">
                     {weatherDetails.hourlyTemperatures?.map((temp, index) => (
                         <div key={index} className="hour">
-                            <p>{temp.time}</p>
-                            <p>{temp.temp}°</p>
+                            <p className='hour-temp'>{(() => formatHour(temp.time))()}</p>
+                            <p>{Math.ceil(temp.temp)}°</p>
                         </div>
                     ))}
                 </div>

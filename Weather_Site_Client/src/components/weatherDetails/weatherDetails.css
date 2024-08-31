@@ -46,15 +46,11 @@ body {
 
 .temperature p {
     font-size: 24px;
-    margin: 5px 0;
-    text-align: start;
-    padding-left: 40%;
-    padding-top: 8px;
+    margin-bottom: 0px;
     top: 394px;
     left: 937px;
-    width: 79px;
     height: 44px;
-    text-align: left;
+    text-align: center;
     font: normal normal 300 30px/30px Heebo;
     letter-spacing: 0px;
     color: #E8F1F2;
@@ -65,7 +61,7 @@ body {
 .details {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 52px;
     margin-right: 52px;
 
@@ -121,7 +117,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     text-align: center;
 }
 
@@ -129,6 +125,17 @@ body {
     margin-bottom: 0px;
     margin-top: 10px;
 
+}
+
+.hour-temp {
+    color: #A8C6CB;
+}
+
+.labels {
+    font: normal normal 300 20px/30px Heebo;
+    letter-spacing: 0px;
+    color: #E8F1F2;
+    opacity: 1;
 }
 
 @media (max-width: 1200px) {
