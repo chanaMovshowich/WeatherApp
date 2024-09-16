@@ -13,7 +13,6 @@ body {
     flex-direction: row;
     background: #F1F1F1 0% 0% no-repeat padding-box;
     width: 98vw;
-
 }
 
 .check-city {
@@ -23,7 +22,6 @@ body {
     height: 100vw;
     box-sizing: border-box;
     max-height: 100vh;
-
 }
 
 #weather-details {
@@ -32,13 +30,11 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
-
 }
 
 .logo-img {
     height: 10%;
     width: 20%;
-
 }
 
 .presentation-text {
@@ -55,7 +51,6 @@ body {
     margin: 0px;
     margin-bottom: 120px;
     top: 45px;
-
 }
 
 .text-box-container {
@@ -74,7 +69,6 @@ body {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 10px;
     opacity: 1;
-
 }
 
 #inputs div {
@@ -114,7 +108,6 @@ input[type="Button"] {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-
 }
 
 #input-label {
@@ -127,32 +120,22 @@ input[type="Button"] {
     letter-spacing: 0px;
     color: #707070;
     opacity: 1;
-
 }
 
 .botom {
     position: relative;
     margin-top: 100px;
-
     left: 10%;
     color: #707070;
-
 }
 
 .botom p {
     margin-right: 20px;
-
 }
 
 .botom div {
     display: flex;
 }
-
-.cityName {
-    background-color: #FFFFFF;
-}
-
-
 
 @media (max-width: 1200px) {
 
@@ -171,14 +154,9 @@ input[type="Button"] {
     .presentation-text {
         width: 80%;
     }
-
 }
 
 @media(max-width:768px) {
-    .presentation-text {
-        width: 80%;
-    }
-
     .check-city {
         width: 100%;
         padding: 20px;
@@ -186,6 +164,4 @@ input[type="Button"] {
         height: auto;
         max-height: none;
     }
-
-
 }

@@ -58,23 +58,23 @@ export const getTheWeatherForecast = async (req, res, next) => {
             hourlyTemperatures: [
                 {
                     time: (currentHour - 3 + 24) % 24,
-                    temp: currentHour > 2 ? getDegreeForSpecificHour(weatherData, currentHour) : getDegreeForSpecificHour(yesterday, (currentHour - 3 + 24) % 24)
+                    temp: currentHour > 2 ? getDegreeForSpecificHour(weatherData, currentHour - 3) : getDegreeForSpecificHour(yesterday, (currentHour - 3 + 24) % 24)
                 },
                 {
                     time: (currentHour - 2 + 24) % 24,
-                    temp: currentHour > 1 ? getDegreeForSpecificHour(weatherData, currentHour) : getDegreeForSpecificHour(yesterday, (currentHour - 2 + 24) % 24)
+                    temp: currentHour > 1 ? getDegreeForSpecificHour(weatherData, currentHour - 2) : getDegreeForSpecificHour(yesterday, (currentHour - 2 + 24) % 24)
                 },
                 {
                     time: (currentHour - 1 + 24) % 24,
-                    temp: currentHour !== 0 ? getDegreeForSpecificHour(weatherData, currentHour) : getDegreeForSpecificHour(yesterday, (currentHour - 1 + 24) % 24)
+                    temp: currentHour !== 0 ? getDegreeForSpecificHour(weatherData, currentHour - 1) : getDegreeForSpecificHour(yesterday, (currentHour - 1 + 24) % 24)
                 },
                 {
                     time: currentHour,
                     temp: current.temp_c
                 },
                 {
-                    time: currentHour + 1,
-                    temp: currentHour !== 23 ? getDegreeForSpecificHour(weatherData, currentHour + 1) : getDegreeForSpecificHour(tomorrow, 0)
+                    time: (currentHour + 1 + 24) % 24,
+                    temp: currentHour !== 23 ? getDegreeForSpecificHour(weatherData, currentHour + 1) : getDegreeForSpecificHour(tomorrow, (currentHour + 1 + 24) % 24)
                 }
             ]
         };

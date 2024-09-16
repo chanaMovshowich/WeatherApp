@@ -9,9 +9,10 @@ import './WeatherDetails.css';
  * Accessibility features are included, with ARIA roles and labels to support screen readers.
  */
 
-//a function that return hour in format of full hour
 const WeatherDetails = ({ weatherDetails }) => {
     const modifiedDateTimeString = weatherDetails.localtime.replaceAll('-', '/').replace(' ', ' at ');
+
+    //a function that return hour in format of full hour
     const formatHour = (hour) => {
         if (hour < 10) {
             return "0" + hour + ":00"
@@ -30,7 +31,7 @@ const WeatherDetails = ({ weatherDetails }) => {
 
                 {/* Temperature and condition */}
                 <div className="temperature" aria-labelledby="temperature-label">
-                    <h1 id="temperature-label">{Math.ceil(weatherDetails.temp_c)}°</h1>
+                    <h1 id="temperature-label">{Math.round(weatherDetails.temp_c)}°</h1>
                     <p>{weatherDetails.condition}</p>
                 </div>
 
@@ -55,7 +56,7 @@ const WeatherDetails = ({ weatherDetails }) => {
                     {weatherDetails.hourlyTemperatures?.map((temp, index) => (
                         <div key={index} className="hour">
                             <p className='hour-temp'>{(() => formatHour(temp.time))()}</p>
-                            <p>{Math.ceil(temp.temp)}°</p>
+                            <p>{Math.round(temp.temp)}°</p>
                         </div>
                     ))}
                 </div>

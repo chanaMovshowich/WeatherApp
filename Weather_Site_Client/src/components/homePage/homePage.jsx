@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./homePage.css";
 import logoImage from "../../assets/logo.svg";
 import { getWeatherDetails } from "../../api/weatherApi";

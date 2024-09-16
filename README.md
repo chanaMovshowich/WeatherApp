@@ -26,11 +26,11 @@ The Weather Web Application is a responsive and accessible web app built with Re
     ```
 
 ### Backend Setup
-1. Navigate to the backend directory:
+1. Navigate to the server directory:
     ```bash
-    cd Weather_Site_Backend
+    cd Weather_Site_Server
     ```
-2. Install backend dependencies:
+2. Install server dependencies:
     ```bash
     npm install
     ```
@@ -38,12 +38,13 @@ The Weather Web Application is a responsive and accessible web app built with Re
     - Create a `.env` file in the backend directory and add your WeatherAPI key:
       ```plaintext
       API_KEY=your_weather_api_key
+      PORT=5000
       ```
-4. Start the backend server:
+4. Start the server:
     ```bash
     npm start
     ```
-    The backend server will run on `http://localhost:5000` by default.
+    The server will run on `http://localhost:5000` by default.
 
 ### Frontend Setup
 1. Navigate to the frontend directory:

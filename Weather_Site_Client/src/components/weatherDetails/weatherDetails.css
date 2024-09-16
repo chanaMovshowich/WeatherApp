@@ -1,6 +1,5 @@
 body {
     font-family: Heebo, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
 }
 
 .container {
@@ -43,7 +42,6 @@ body {
     margin-top: 72px;
 }
 
-
 .temperature p {
     font-size: 24px;
     margin-bottom: 0px;
@@ -55,7 +53,6 @@ body {
     letter-spacing: 0px;
     color: #E8F1F2;
     opacity: 1;
-
 }
 
 .details {
@@ -64,7 +61,6 @@ body {
     margin-top: 10px;
     margin-left: 52px;
     margin-right: 52px;
-
 }
 
 .details div {
@@ -79,7 +75,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    flex-wrap: nowrap;
     overflow-x: auto;
     padding: 10px;
     margin-left: 54px;
@@ -100,7 +95,6 @@ body {
     color: #E8F1F2;
     opacity: 1;
     margin-top: 50px;
-
 }
 
 .location p {
@@ -108,23 +102,18 @@ body {
     letter-spacing: 0px;
     color: #A8C6CB;
     opacity: 1;
-
 }
-
-
 
 .hour {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 10px; */
     text-align: center;
 }
 
 .hour p {
     margin-bottom: 0px;
     margin-top: 10px;
-
 }
 
 .hour-temp {
@@ -141,10 +130,7 @@ body {
 @media (max-width: 1200px) {
     .container {
         margin-left: 100px;
-
     }
-
-
 }
 
 @media(max-width:768px) {
